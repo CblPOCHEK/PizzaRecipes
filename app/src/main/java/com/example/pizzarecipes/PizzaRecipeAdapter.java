@@ -39,7 +39,7 @@ public class PizzaRecipeAdapter extends RecyclerView.Adapter<PizzaRecipeAdapter.
 
         viewHolder.pizzaImageView.setImageResource(pizzaRecipeItem.getImageResource());
         viewHolder.title.setText(pizzaRecipeItem.getTitle());
-        viewHolder.description.setText(pizzaRecipeItem.getDesription());
+        viewHolder.description.setText(pizzaRecipeItem.getDescription());
     }
 
     @Override
@@ -71,8 +71,8 @@ public class PizzaRecipeAdapter extends RecyclerView.Adapter<PizzaRecipeAdapter.
 
             Intent intent = new Intent(context,RecipeActivity.class);
             intent.putExtra("imageResource",pizzaRecipeItem.getImageResource());
-            intent.putExtra("title",pizzaRecipeItem.getRecipe());
-            intent.putExtra("descriptions",pizzaRecipeItem.getDesription());
+            intent.putExtra("title",pizzaRecipeItem.getTitle());
+            intent.putExtra("descriptions",pizzaRecipeItem.getDescription());
             intent.putExtra("recipe",pizzaRecipeItem.getRecipe());
             context.startActivity(intent);
         }

@@ -4,13 +4,13 @@ public class PizzaRecipeItem {
 
     private int imageResource;
     private String title;
-    private String desription;
+    private String description;
     private String recipe;
 
-    public PizzaRecipeItem(int imageResource, String title, String desription, String recipe) {
+    public PizzaRecipeItem(int imageResource, String title, String description, String recipe) {
         this.imageResource = imageResource;
         this.title = title;
-        this.desription = desription;
+        this.description = description;
         this.recipe = recipe;
     }
 
@@ -22,9 +22,7 @@ public class PizzaRecipeItem {
         return title;
     }
 
-    public String getDesription() {
-        return desription;
-    }
+    public String getDescription() { return description;}
     public String getRecipe(){
         return recipe;
     }
